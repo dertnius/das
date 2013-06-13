@@ -22,6 +22,9 @@ namespace Data_Structures
         //El constructor debe de ser 
         //constructor, cuidado public, private!!
 
+        //Cuidado con los argumentos
+        //this initialize the object. Construct
+
         public ListNode(object dataValue)
             : this(dataValue, null)
         {
