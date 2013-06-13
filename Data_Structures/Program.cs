@@ -91,8 +91,36 @@ namespace Data_Structures
 
         }
 
-    
+        public void InsertAtBack(object insertItem)
+        {
 
+           lock (this) {
+
+              if (isEmpty())
+               {
+                   firstNode = lastNode = new ListNode(insertItem);
+               }
+               else
+                   lastNode = lastNode.Next = new ListNode(insertItem);
+            }
+
+
+         }
+
+        public object RemoveatFront() {
+
+            lock (this)
+            {
+                if (isEmpty()) { throw new EmptyListException(name); }
+
+                object returnObjRem = firstNode.Data;
+                return returnObjRem; 
+                
+            }
+        
+        
+        
+        }
 
         public bool isEmpty()
         {
