@@ -18,7 +18,7 @@ namespace Data_Structures
         private ListNode next;
         private object insertItem;
 
-        //Cuidado con los argumentos
+        
         //this initialize the object. Construct
 
         public ListNode(object dataValue)
@@ -91,21 +91,7 @@ namespace Data_Structures
 
         }
 
-        public void InsertAtBack(object insertItem)
-        {
-
-            lock (this) {
-
-                if (isEmpty())
-                {
-                    firstNode = lastNode = new ListNode(insertItem);
-                }
-                else
-                    lastNode = lastNode.Next = new ListNode(insertItem);
-            }
-
-
-        }
+    
 
 
         public bool isEmpty()
