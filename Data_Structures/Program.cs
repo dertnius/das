@@ -18,10 +18,6 @@ namespace Data_Structures
         private ListNode next;
         private object insertItem;
 
-        //Constructor   
-        //El constructor debe de ser 
-        //constructor, cuidado public, private!!
-
         //Cuidado con los argumentos
         //this initialize the object. Construct
 
